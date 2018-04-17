@@ -1,0 +1,234 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context="com.datalogic.hhs.core_sdk_demoapp.activity.ConfigurationFragment">
+
+    <TextView
+        android:id="@+id/titleLabel"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:textSize="45dp"
+        android:text="Demo Configuration"
+        android:textStyle="bold"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Barcode Read :"
+        android:id="@+id/textView3"
+        android:textSize="20dp"
+        android:layout_marginTop="32dp"
+        android:layout_below="@+id/titleLabel"
+         />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="....."
+        android:id="@+id/brconfiguration"
+        android:textSize="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/textView3"
+        android:layout_alignStart="@+id/textView3" />
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentEnd="true"
+        android:layout_toRightOf="@+id/textView3"
+        android:layout_marginLeft="100dp"
+        android:layout_marginBottom="70dp"
+        android:layout_alignBottom="@+id/layoutEmptySpacingRow"
+        android:id="@+id/frameLayout"
+        android:layout_below="@+id/textView3">
+
+        <ImageView
+            android:id="@+id/imageBarcode"
+            android:layout_marginRight="-30dp"
+            android:layout_marginLeft="-30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutEmptySpacingRow"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:dividerPadding="220dip"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:layout_alignParentEnd="false"
+        android:layout_marginTop="400dp"
+        android:paddingTop="50dp">
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutSend"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:dividerPadding="220dip"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:layout_alignParentEnd="false"
+        android:layout_alignBottom="@+id/layoutEmptySpacingRow"
+
+        android:paddingTop="30dp">
+
+        <EditText
+            android:id="@+id/text_to_send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_weight=".40"
+            android:imeOptions="actionDone"
+            android:singleLine="true"
+            />
+
+        <Button
+            android:id="@+id/button_send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight=".20"
+            android:text="@string/send"
+            android:background="@drawable/buttonshape" />
+
+        <Button
+            android:id="@+id/generateBarcode"
+            android:layout_weight=".20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/generate_barcode"
+            android:background="@drawable/buttonshape" />
+
+        <Button
+            android:id="@+id/generateBarcodeFNC3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/generate_barcode_fnc3"
+            android:background="@drawable/buttonshape"
+            android:layout_weight=".20" />
+
+    </LinearLayout>
+
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/gridLayout"
+        android:layout_alignParentStart="false"
+        android:layout_alignParentEnd="false"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@+id/layoutSend">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_row="1"
+                android:layout_column="1"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Kind of barcode:  "
+                    android:id="@+id/barcodeKindLabel" />
+
+                <Spinner
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/genBarcodeSpinner"
+                    android:layout_weight="0.25" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_row="1"
+                android:layout_column="1"
+                android:layout_marginTop="50dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Send Command:"
+                    android:id="@+id/sndCommandTextView"
+                    android:layout_toStartOf="@+id/frameLayout"
+                    android:layout_below="@+id/cfgLayout_3rdRow"
+                    android:layout_row="2"
+                    android:layout_column="0" />
+
+                <Spinner
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/spinnerCommand"
+                    android:layout_weight="0.25"
+                    android:layout_marginRight="50dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Choose a barcode to read:"
+                    android:id="@+id/barcodeTextView" />
+
+                <Spinner
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/spinnerBarcode"
+                    android:layout_weight=".25" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="1">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Send Command"
+                    android:id="@+id/sndCommandBtn"
+                    android:layout_weight=".25"
+                    android:background="@drawable/buttonshape"
+                    android:layout_marginTop="10dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="                  "
+                    android:id="@+id/textView5"
+                    android:layout_weight="0.50" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Show barcode"
+                    android:id="@+id/showBarcodeButton"
+                    android:background="@drawable/buttonshape"
+                    android:layout_weight=".25"
+                    android:layout_marginTop="10dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </GridLayout>
+
+</RelativeLayout>

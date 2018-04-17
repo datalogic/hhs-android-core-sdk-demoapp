@@ -1,0 +1,1 @@
+include ':app', ':DatalogicCoreSDK-1.0-release'

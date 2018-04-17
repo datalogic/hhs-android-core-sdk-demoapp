@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/DatalogicCoreSDK-1.0-release/DatalogicCoreSDK-1.0-release.iml" filepath="$PROJECT_DIR$/DatalogicCoreSDK-1.0-release/DatalogicCoreSDK-1.0-release.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hhs-android-core-sdk-demoapp.iml" filepath="$PROJECT_DIR$/hhs-android-core-sdk-demoapp.iml" />
+    </modules>
+  </component>
+</project>

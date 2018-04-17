@@ -1,0 +1,96 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.BatchFragment"
+    android:tag="friends">
+
+
+    <TextView
+        android:id="@+id/textList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/HeaderList"
+        android:layout_below="@+id/label"
+        android:layout_alignParentStart="true"
+        android:textSize="20dp"
+        android:typeface="monospace" />
+
+    <ListView
+        android:id="@+id/listViewBatch"
+        android:layout_width="match_parent"
+
+        android:layout_below="@+id/textList"
+        android:layout_marginTop="15dp"
+        android:transcriptMode="alwaysScroll"
+        android:stackFromBottom="true"
+        android:divider="#1d1daa"
+        android:gravity="center|bottom"
+        android:contextClickable="false"
+        android:headerDividersEnabled="true"
+        android:layout_alignParentBottom="false"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/my_border"
+        android:scrollIndicators="top"
+        android:layout_centerVertical="true"
+        android:visibility="visible"
+        android:layout_height="255dp" />
+
+
+    <LinearLayout
+        android:id="@+id/batchLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:dividerPadding="220dip"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:gravity="center|bottom"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="false">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Batch Mode On"
+            android:id="@+id/buttonEnableBatch"
+            android:layout_alignParentStart="true"
+            android:background="@drawable/buttonshape"
+            android:layout_centerVertical="true"
+            android:layout_weight=".33"
+            android:layout_marginRight="10dp"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Batch Mode off"
+            android:id="@+id/buttonDisableBatch"
+            android:layout_alignBottom="@+id/buttonEnableBatch"
+            android:layout_toEndOf="@+id/buttonEnableBatch"
+            android:background="@drawable/buttonshape"
+            android:layout_weight=".33"
+            android:layout_marginRight="10dp"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dump Batch"
+            android:id="@+id/buttonDumpBatch"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/buttonshape"
+            android:layout_toRightOf="@+id/buttonDisableBatch"
+            android:layout_centerVertical="true"
+            android:layout_weight=".33"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/label"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:textSize="45dp"
+        android:text="Demo Batch"
+        android:textStyle="bold"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true" />
+
+</RelativeLayout>

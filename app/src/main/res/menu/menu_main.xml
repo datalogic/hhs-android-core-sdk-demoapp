@@ -1,0 +1,28 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.datalogic.hhs.core_sdk_demoapp.MainActivity">
+
+
+
+
+    <item
+        android:id="@+id/action_search"
+        android:title="@string/action_search"
+        android:orderInCategory="100"
+        android:icon="@drawable/restart"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/action_battery"
+        android:title="@string/action_search"
+        android:orderInCategory="100"
+        android:icon="@drawable/gasstation"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/action_connect"
+        android:title="@string/action_connect"
+        android:orderInCategory="100"
+        app:showAsAction="never" />
+</menu>

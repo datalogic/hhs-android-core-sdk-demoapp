@@ -1,0 +1,127 @@
+<resources>
+    <string name="app_name">DatalogicSDKDemo</string>
+    <string name="action_settings1">CCF1</string>
+    <string name="action_settings2">CCF2</string>
+    <string name="action_connect">Connect a device</string>
+    <string name="action_search">Search</string>
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+
+    <string name="nav_item_home">Demo Pharmacy</string>
+    <string name="nav_item_friends">Demo Batch</string>
+    <string name="nav_item_notifications">Demo Health Care</string>
+    <string name="nav_item_configuration">Demo Configuration</string>
+
+
+    <!-- navigation drawer item labels  -->
+    <string-array name="nav_drawer_labels">
+        <item>@string/nav_item_home</item>
+        <item>@string/nav_item_friends</item>
+        <item>@string/nav_item_notifications</item>
+        <item>@string/nav_item_configuration</item>
+    </string-array>
+
+    <string name="title_messages">Health Care</string>
+    <string name="title_friends">Batch</string>
+    <string name="title_home">Pharmacy</string>
+    <string name="title_configuration">Configuration</string>
+    <string name="title_all"> </string>
+
+
+    <string name="connecteFailedMain">Failed</string>
+    <string name="connectedMainOverSpp">Connection on spp</string>
+    <string name="connectedMainNotOverSpp">Connection no spp</string>
+
+
+    <string name="HeaderList">Barcode Item/ID</string>
+    <string name="generate_barcode_fnc3">Generate Barcode FNC3</string>
+    <string name="generate_barcode">Generate Barcode</string>
+    <string name="send">send</string>
+
+
+    <!-- Configuration fragment spinner value -->
+    <string-array name="commands_array">
+        <item>Scanner Name</item>
+        <item>Enable SDK No CRC</item>
+        <item>Enable SDK</item>
+        <item>Disable SDK</item>
+        <item>Scanner ID</item>
+        <item>Health Check</item>
+        <item>Statistics</item>
+        <item>Test</item>
+        <item>Beep</item>
+        <item>Enable Reader</item>
+        <item>Disable Reader</item>
+        <item>Active Trigger</item>
+        <item>Release Trigger</item>
+        <item>Restore Default</item>
+        <item>Beeper Off</item>
+        <item>Beeper On</item>
+        <item>Silent Mode On</item>
+        <item>Silent Mode Off</item>
+        <item>Secure Level 0</item>
+        <item>Good Read Speaker Off</item>
+        <item>Viber Off</item>
+        <item>Viber On</item>
+        <item>Random Body Color</item>
+        <item>Red Body Color</item>
+        <item>Blue Body Color</item>
+        <item>Green Body Color</item>
+        <item>Yellow Body Color</item>
+        <item>Purple Body Color</item>
+        <item>Turquoise Body Color</item>
+        <item>Orange Body Color</item>
+        <item>Fuchsia Body Color</item>
+        <item>Cyan Body Color</item>
+        <item>Jingle Off</item>
+        <item>Jingle On</item>
+        <item>Disable Manual Batch</item>
+        <item>Enabel Manual Batch</item>
+        <item>Disable Pick Mode</item>
+        <item>Enable Pick Mode</item>
+        <item>Power Off</item>
+        <item>Batch Clear</item>
+        <item>Send Batch Data</item>
+        <item>Check Battery level</item>
+    </string-array>
+
+
+    <string-array name="barcodes_array">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>Abort</item>
+        <item>Batch Mode disable</item>
+        <item>Batch Mode Erase queue</item>
+        <item>Batch Mode enable</item>
+        <item>Batch Mode send data</item>
+        <item>Delete</item>
+        <item>Enter</item>
+        <item>SPP Link</item>
+        <item>No Passkey Requested</item>
+        <item>Passkey Requested</item>
+        <item>Disable pick mode</item>
+        <item>Enable pick mode</item>
+        <item>Power OFF</item>
+        <item>Restore Default</item>
+        <item>Transmit Software Version</item>
+        <item>Unlink</item>
+    </string-array>
+
+
+    <string-array name="barcodes_kind">
+        <item>CODE 39</item>
+        <item>CODE 128</item>
+        <!-- <item>EAN_8</item> -->
+        <item>PDF 417</item>
+        <item>QR CODE</item>
+    </string-array>
+
+</resources>

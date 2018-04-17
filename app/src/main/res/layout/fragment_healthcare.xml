@@ -1,0 +1,90 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.HealthCareFragment"
+    android:tag="messages"
+    android:gravity="center">
+
+
+    <TextView
+        android:id="@+id/label"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:textSize="45dp"
+        android:text="Health Care Demo"
+        android:textStyle="bold"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp">
+
+        <Button
+            android:layout_width="255dp"
+            android:layout_height="155dp"
+            android:text="Silent Mode ON"
+            android:id="@+id/buttonSilentOn"
+            android:layout_gravity="left|bottom"
+            android:background="@drawable/buttonshape"
+            android:drawableLeft="@drawable/noaudio"
+            android:textSize="25dp" />
+
+        <Button
+            android:layout_width="255dp"
+            android:layout_height="155dp"
+            android:text="Silent Mode OFF"
+            android:id="@+id/buttonSilentOff"
+            android:layout_gravity="right|bottom"
+            android:background="@drawable/buttonshape"
+            android:drawableLeft="@drawable/speaker"
+            android:textSize="25dp" />
+
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="95dp"
+            android:text="Restore Default"
+            android:id="@+id/buttonRestoreDefault"
+            android:background="@drawable/buttonshape"
+            android:textColor="@color/colorred"
+            android:layout_gravity="center_horizontal|bottom" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/label">
+
+        <ListView
+            android:id="@+id/listViewHealth"
+            android:layout_width="match_parent"
+            android:layout_height="255dp"
+            android:layout_below="@+id/textList"
+            android:layout_marginTop="15dp"
+            android:transcriptMode="alwaysScroll"
+            android:stackFromBottom="true"
+            android:divider="#1d1daa"
+            android:contextClickable="false"
+            android:headerDividersEnabled="true"
+            android:layout_alignParentEnd="false"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/my_border"
+            android:scrollIndicators="top" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Beep"
+            android:id="@+id/buttonBeep"
+            android:background="@drawable/buttonshape"
+            android:drawableLeft="@drawable/bugle"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center" />
+    </FrameLayout>
+
+</RelativeLayout>
